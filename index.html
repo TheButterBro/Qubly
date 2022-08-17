@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fonts/metropolis.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+</head>
+<body> 
+    <div class="login-popup hidden">
+        <div class="form__fade">
+            <div class="form__body">
+                <button class="form__close">X</button>
+                <h4 class="form__title">Login</h4>
+                <form class="form_log" action="submit">
+                    <input placeholder="Your primary email" type="email" class="email_log">
+                    <input placeholder="Password" type="password" class="password_log">
+                    <button class="submit_log">Login</button>
+                    <b class="submit_reg_error_log"></b>
+                </form>
+                <div class="form__splitter"></div>
+                <p class="form__text">Don`t have an account? <a data-anch="#anchor_sign" class="popup-link" href="/">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+    <div id="anchor_start" class="wrapper">
+        <header>
+            <div class="container">
+                <section class="header__header">
+                    <div class="header__logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                            <g id="Logo" transform="translate(-1756.067 -378.462)">
+                                <path id="Контур_611" data-name="Контур 611" d="M1756.072,478.465" transform="translate(-0.004 -72.574)" fill="#0032d8"/>
+                                <path id="Контур_612" data-name="Контур 612" d="M1780.065,378.462v13.716l-12,6.857-12-6.858h0Z" transform="translate(0 0)" fill="#431f5a"/>
+                                <path id="Контур_613" data-name="Контур 613" d="M1768.067,435.321l12,6.857v13.714h0l-12-6.857-12-6.857V428.463Z" transform="translate(0 -36.287)" fill="#722ed1"/>
+                                <path id="Контур_614" data-name="Контур 614" d="M1854.67,485.32v13.713l-12-6.856h0V478.463Z" transform="translate(-62.604 -72.572)" fill="#722ed1"/>
+                                <path id="Контур_615" data-name="Контур 615" d="M1842.669,378.462v0h0v13.714h0l12,6.856v0h0l12,6.856V392.177Z" transform="translate(-62.604)" fill="#722ed1"/>
+                                <path id="Контур_616" data-name="Контур 616" d="M1866.668,428.463v13.716l-12,6.857-12-6.858,12-6.858Z" transform="translate(-62.604 -36.287)" fill="#431f5a"/>
+                                <path id="Контур_617" data-name="Контур 617" d="M1854.67,485.32l-12,6.857h0V478.463Z" transform="translate(-62.604 -72.572)" fill="#431f5a"/>
+                            </g>
+                        </svg>                          
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="nav__list">
+                            <li class="nav__item sublist-switch">
+                                <p>About</p>
+                                <img src="./img/small-down.svg" alt="">
+                            </li>
+                            <ul class="sublist sublist-hidden">
+                                <li data-anch="#anchor_why" class="sublist__item">Why Qubly</li>
+                                <li data-anch="#anchor_product" class="sublist__item">Product</li>
+                                <li data-anch="#anchor_engineering" class="sublist__item">Engineering</li>
+                            </ul>
+                            <li class="nav__item">Pricing</li>
+                            <li class="nav__item">Contact Us</li>
+                            <li class="nav__item login-button">Login</li>
+                        </ul>
+                    </nav>
+                    <button data-anch="#anchor_sign" class="header__button">Get Started</button>
+                </section>
+                <section class="header__body">
+                    <div data-aos="fade-up" data-aos-once="false"  class="body__content">
+                        <div class="content__tag tag">
+                            <div class="content__tag-wrapper tag-wrapper">
+                                <img src="./img/edit-brightness.svg" alt="">
+                                <p>v3.1 released. <a href="/">Learn more</a></p>
+                            </div>
+                        </div>
+                        <h1
+                        
+                        class="content__title">Your data with real-time analytics</h1>
+                        <p class="content__subtitle">Harness the potential of Big Data Analytics & Cloud Services and become a data-driven organization with Needle tail</p>
+                        <div class="content__buttons">
+                            <button data-anch="#anchor_sign" data-aos="fade-right" data-aos-delay="300"  class="content__trial">Start free trial</button>
+                            <button data-aos="fade-left" data-aos-delay="300"  class="content__learn-more">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="body__img">
+                        <img src="./img/header-img.png" alt="">
+                    </div>
+                </section>
+            </div>
+
+        </header>
+        <main>
+            <section id="anchor_why" class="why">
+                <div class="container">
+                    <div class="why__wrapper">
+                        <div class="why__tag tag">
+                            <div class="why__tag-wrapper tag-wrapper">
+                                <img src="./img/Icon awesome-eye.svg" alt="">
+                                <p>Why Qubly</p>
+                            </div>
+                        </div>
+                        <h2 class="why__title">Get actionable insights from Big Data in 3 steps</h2>
+                        <p class="why__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                        <div class="why__row">
+                            <div data-aos="fade-right" class="why__item">
+                                <img src="./img/item1.svg" alt="" class="item__img">
+                                <h3 class="item__title_slim">Data in real-time</h3>
+                                <p class="item__subtitle">Collect data in real-time from multiple channels and move it into a data lake, in its original format.</p>
+                            </div>
+                            <div data-aos="fade-up" class="why__item">
+                                <img src="./img/item2.svg" alt="" class="item__img">
+                                <h3 class="item__title">Powerful Algorithms</h3>
+                                <p class="item__subtitle">With the help of powerful algorithms, quality rules & techniques, obtain simplified & enriched data.</p>
+                            </div>
+                            <div data-aos="fade-left" class="why__item">
+                                <img src="./img/item3.svg" alt="" class="item__img">
+                                <h3 class="item__title">Valuable business insights</h3>
+                                <p class="item__subtitle">Collect processed & cleansed data that is ready to be analyzed to gather valuable business insights.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="anchor_product" class="product">
+                <div class="container">
+                    <div class="product__wrapper">
+                        <div class="product__img-wrapper">
+                            <img src="img/Logos.svg" alt="" class="product__img">
+                        </div>
+                        <div class="product__content">
+                            <div data-aos="fade-left" class="product__tag tag">
+                                <div class="product__tag-wrapper tag-wrapper">
+                                    <img src="img/electronic-circuit.svg" alt="">
+                                    <p>For Product Teams</p>
+                                </div>
+                            </div>
+                            <h3 data-aos="fade-left" class="product__title">Launch with the best stack</h3>
+                            <p data-aos="fade-left" data-aos-delay="200" class="product__subtitle">A centralized platform that integrates zillions of data sources using Big Data
+                             ELT (Extract, Load & Transform) that leaves no data behind</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="anchor_engineering" class="engineering">
+                <div class="container">
+                    <div class="engineering__wrapper">
+                        <div class="engineering__content">
+                            <div data-aos="fade-right" class="engineering__tag tag">
+                                <div class="engineering__tag-wrapper tag-wrapper">
+                                    <img src="img/compass.svg" alt="">
+                                    <p>For Engineering Teams</p>
+                                </div>
+                            </div>
+                            <h3 data-aos="fade-right" class="engineering__title">Data-driven pipelines in minutes</h3>
+                            <p data-aos="fade-right" data-aos-delay="200" class="engineering__subtitle">Maintenance-free data pipelines with quick set-up 
+                            and straight-forward deployments that are powered by a modern & scalable platform.</p>
+                        </div>
+                        <div class="engineering__img-wrapper">
+                            <img src="img/308-02.png" alt="" class="engineering__img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="testimonial">
+                <div class="container">
+                    <div class="testimonail__wrapper">
+                        <h4 class="testimonail__title">"What I love about Qubly is the easy way we can collaborate even if there is a lot of people involved in the process"</h4>
+                        <img src="./img/Profile.svg" alt="" class="testimonail__img">
+                        <p class="testimonail__subtitle">Guillaume Cabane
+                            CTO @ BigSpring</p>
+                        <div class="testimonail__splitter"></div>
+                        <div class="testimonail__row">
+                            <div class="testimonail__item">
+                                <img src="./img/Tonkean.svg" alt="">
+                            </div>
+                            <div class="testimonail__item">
+                                <img src="./img/BigSpring.svg" alt="">
+                            </div>
+                            <div class="testimonail__item">
+                                <img src="./img/Clearbit.svg" alt="">
+                            </div>
+                            <div class="testimonail__item">
+                                <img src="./img/Mine.svg" alt="">
+                            </div>
+                            <div class="testimonail__item">
+                                <img src="./img/Shake.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="anchor_sign" class="sign">
+                <div class="container">
+                    <div class="sign__wrapper">
+                        <div class="sign__content">
+                            <h3 data-aos="fade-down" class="content__title">
+                                See why the world’s best companies use Qubly to become truly data-driven.
+                            </h3>
+                            <div data-aos="fade-down" class="content__splitter">Trusted by</div>
+                            <div class="content__box">
+                                <div class="content__row">
+                                    <div data-aos="fade" class="content__item"><img src="./img/accenture-4.svg" alt=""></div>
+                                    <div data-aos="fade" data-aos-delay="200" class="content__item"><img src="./img/react.svg" alt=""></div>
+                                </div>
+                                <div class="content__row">
+                                    <div data-aos="fade" data-aos-delay="400" class="content__item"><img src="./img/airbnb.svg" alt=""></div>
+                                    <div data-aos="fade" data-aos-delay="600" class="content__item"><img src="./img/sky-4.svg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sign__form-wrapper">
+                            <div class="sign__form">
+                                <div class="form__body">
+                                    <h4 class="form__title">Sign Up</h4>
+                                    <form class="form" action="submit">
+                                        <input placeholder="Your primary email" type="text" class="email">
+                                        <input placeholder="Password" type="password" class="password">
+                                        <input placeholder="Re-type password" type="password" class="password-again">
+                                        <button class="submit_reg">Start your free trial</button>
+                                        <b class="submit_reg_error"></b>
+                                        <p>or</p>
+                                        <img src="./img/btn_google_signin_dark_normal_web@2x.png" alt="" class="google">
+                                    </form>
+                                    <div class="form__splitter"></div>
+                                    <p class="form__text">Already have an account? <a class="login-button" href="/">Login</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__company">
+                        <img data-anch="#anchor_start" src="./img/Logo.svg" alt="" class="comapny__logo">
+                        <p class="company__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ut wisi enim ad minim</p>
+                        <div class="comapny__social">
+                            <img src="./img/facebook-icon.svg" alt="" class="social__item">
+                            <img src="./img/twitter-3.svg" alt="" class="social__item">
+                            <img src="./img/instagram-2016.svg" alt="" class="social__item">
+                        </div>
+                    </div>
+                    <ul class="footer__list">
+                        <li class="list__item"><h5 class="list__title">Product</h5></li>
+                        <li class="list__item"><a href="/">Connection</a></li>
+                        <li class="list__item"><a href="/">Protocols</a></li>
+                        <li class="list__item"><a href="/">Personas</a></li>
+                        <li class="list__item"><a href="/">Integration</a></li>
+                        <li class="list__item"><a href="/">Catalog</a></li>
+                        <li class="list__item"><a href="/">Pricing</a></li>
+                        <li class="list__item"><a href="/">Security</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="list__item"><h5 class="list__title">For Developers</h5></li>
+                        <li class="list__item"><a href="">Docs</a></li>
+                        <li class="list__item"><a href="">API</a></li>
+                        <li class="list__item"><a href="">Open Source</a></li>
+                        <li class="list__item"><a href="">Engineering Team</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="list__item"><h5 class="list__title">Company</h5></li>
+                        <li class="list__item"><a href="">Careers</a></li>
+                        <li class="list__item"><a href="">Blog</a></li>
+                        <li class="list__item"><a href="">Press</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="list__item"><h5 class="list__title">Support</h5></li>
+                        <li class="list__item"><a href="">Help Center</a></li>
+                        <li class="list__item"><a href="">Contact Us</a></li>
+                        <li class="list__item"><a href="">Security Bulletins</a></li>
+                        <li class="list__item"><a href="">Documentation</a></li>
+                        <li class="list__item"><a href="">Partner Portal</a></li>
+                    </ul>
+                    <div class="footer__newsletter">
+                        <h5 class="newsletter__title">Newsletter</h5>
+                        <div class="newsletter__input">
+                            <input class="newsletter__email" placeholder="Email" type="email">
+                            <button class="newsletter__button"><img src="./img/Icon ionic-ios-send.svg" alt=""></button>
+                            <b class="newsletter__error"></b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
